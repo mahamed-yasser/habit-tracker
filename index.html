@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Habit Tracker</title><link rel="stylesheet" href="style.css"></head><body>
+<header class="top"><div><h1>Habit Tracker</h1><p class="sub">Tick habits each day, see streaks and the last 14 days, export your history. Data stays in this browser.</p></div><div class="actions noprint"><button class="ghost" id="exp">Export CSV</button></div></header>
+<main><section class="panel"><h2>Add a habit</h2><form id="f" novalidate class="actions" style="align-items:end"><label style="margin:0;flex:1;min-width:200px">Habit<input id="name" maxlength="40" placeholder="e.g. Read 20 minutes"></label><button class="btn" type="submit">Add</button></form><p class="err" id="err" role="alert" hidden></p></section>
+<section class="panel"><h2>Today <span class="mut" id="today"></span></h2><div id="list"></div><p class="mut" id="empty" hidden>No habits yet. Add one above.</p></section></main>
+<footer>Local tool. A day without a tick breaks the streak, except today (you still have time).</footer>
+<script src="util.js"></script><script src="app.js"></script></body></html>
